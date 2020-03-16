@@ -1,0 +1,219 @@
+
+:root {
+    --footerHeight: 60px;
+
+    --themColor1: #181717b9;
+    --themColor1-Opacity: #18171767;
+
+    --themColor2: #ffcc5b;
+    --themColor2-Opacity: #ffcb5b94;
+
+    --borderElement: solid grey 1px;
+
+}
+
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    direction: ltr;
+    font-family: "Poppins", Sans-serif;
+    min-height: 100vh;
+    background-color: var(--themColor2);
+    width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+a{
+    text-decoration: none;
+}
+/* preventing safari default style------------- */
+input,
+textarea{
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+
+.bodyWrapperGrid {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    min-height: calc(100vh - var(--footerHeight));
+    background-color: var(--themColor2);
+    align-items: center;
+    justify-items: center;
+    transition: ease-in-out;
+    background-image: url('img/BG.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landingForm {
+    display: flex;
+    width: 80%;
+    max-width: 550px;
+    min-height: 95%;
+    background-color: rgba(255, 255, 255, 0.698);
+    border: var(--borderElement);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.inputs {
+    background-color: var(--themColor2-Opacity);
+    border: var(--borderElement);
+    border-radius: 5px 5px 5px 5px;
+    line-height: 2.1em;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    outline: none;
+    color: var(--themColor1);
+    font-weight: bold;
+}
+.inputs::placeholder {
+    color: var(--themColor1);
+    font-weight: bold;
+}
+
+footer img{
+    width: auto;
+    height: var(--footerHeight);
+    margin-left:5px;
+}
+.submit {
+    background-color: var(--themColor1);
+    color:white;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 15px;
+    border: var(--borderElement);
+    padding:10px;
+  
+
+}
+
+.submit:hover {
+    cursor: pointer;
+    color:var(--themColor2)
+}
+
+footer {
+    height: var(--footerHeight);
+    background-color: var(--themColor2);
+    color: var(--themColor1);
+    font-weight: bold;
+    text-align: center;
+    line-height: var(--footerHeight);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+}
+.Column1 h3,
+.Column1 p{
+    font-size: larger;
+}
+.Column1, .Column2{
+    background-color: rgba(255, 255, 255, 0.698);
+    padding: 10px;
+    text-align: center;
+
+    font-size: large;
+    width: 95%;
+    max-width: 550px;
+    min-height: 95%;
+    height:fit-content;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    border-radius: 10px;
+    border: var(--borderElement);
+
+}
+.Column2{
+    background-color: transparent;
+    background-image: url('/img/cta-arrow-right.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    background-size: 100% auto;
+    width: 100%;
+    height: 60%;
+    margin:0;
+    padding: 0;
+    max-width: 100%;
+    border: none;
+
+}
+
+@media only screen and (max-width: 800px) {
+ 
+    .bodyWrapperGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+        margin-top:100px;
+        width: 100vw;
+    }
+    .landingForm {
+        grid-row: 2;
+        width: 100vw;
+        height: 100%;
+        border-bottom: var(--borderElement);
+        border-radius: 0;
+    }
+.Column2{
+display: none;
+visibility: hidden;
+width: 0;
+height: 0;
+}
+    .Column1{
+        grid-row: 1;
+        height: 100%;
+        width: 100vw;
+        border-radius: 0;
+
+    }
+
+
+    .inputs {
+        width: 80%;
+        padding: 10px;
+    }
+
+
+
+    footer{
+        position: absolute;
+        top:0;
+    }
+
+}
+
+.thankYou{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+}
+
+
+
+
+

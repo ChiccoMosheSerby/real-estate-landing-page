@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/BG.png" />
+
+    <title>DEMO Real Estate</title>
+
+    <meta name="theme-color" content="#007f9f">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#007f9f">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#007f9f">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <div class="bodyWrapperGrid" id="bodyWrapperGrid">
+        <div class="Column1">
+            <h3 style="border-bottom:solid black 2px;">DEMO Real Estate Inc.</h3>
+            <p style="font-weight:bold;">We can makes your dream come true</p>
+            <a href="#landingForm"
+            class="smooth" style="color:var(--themColor2);
+                 background-color: #00000088;
+                  padding: 15px;
+                   margin: auto;text-align: center; border-radius: 5px;">
+                Contact us
+        </a>
+            <p>
+                We will get back to you after a maximum of 2 working days.
+            </p>
+            <p class="smooth2"
+                style="color:var(--themColor2); background-color: #00000088; padding: 15px; margin: auto;text-align: center; border-radius: 5px;">
+
+                Submit application within the next 24 hours and save a 20% !
+            </p>
+            <p>Lorem ipsum dolor.aliquid temporibus fugiat et vero nemo
+                ad. Molestiae, eaque!</p>
+        </div>
+        <div class="Column2">
+
+        </div>
+        <form id="landingForm" class="mainGridItem landingForm">
+            <input name="email" class="inputs" type="email" placeholder="Email" required></input>
+            <input name="name" class="inputs" type="text" placeholder="Name" required></input>
+            <input name="phone" class="inputs" type="tel" placeholder="Phone" required></input>
+
+            <textarea name="concept" class="inputs" type="text" placeholder="You can add free text here .."></textarea>
+            <button class="inputs submit" type="submit">SEND</button>
+            <div id="thankYou" class="thankYou"></div>
+        </form>
+
+    </div>
+
+    <footer id="footer">
+        <img style="border:solid white 1px" src="/img/BG.png" alt="">
+    </footer>
+
+    <script src="js/general.js"></script>
+
+
+</body>
+
+</html>
